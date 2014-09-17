@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Cassia Leidigh &rsaquo; Gallery</title>
+	<link rel="stylesheet" href="/style.css" type="text/css" media="screen" title="Cassia Leidigh - Screen" charset="utf-8">
+
+	<!-- google.load -->
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript" charset="utf-8">
+		//google.load("swfobject"); // Not yet
+	</script>
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-7347640-1");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+
+	<!-- SWFObject, for SimpleViewer -->
+	<script type="text/javascript" src="swfobject.js"></script>
+</head>
+<body class="gallery">
+	<div id="header">
+		<h1><a href="/">The Portfolio of Cassia Leidigh</a></h1>
+	</div>
+	<ul id="menu">
+		<li><a href="/">Home</a></li>
+		<li class="current"><a href="/gallery/">The Gallery</a></li>
+		<li><a href="/about.html">About the Artist</a></li>
+	</ul>
+	<div id="content">
+		<div class="primary">
+			<div id="flashcontent">SimpleViewer requires JavaScript and the Flash Player. <a href="http://www.macromedia.com/go/getflashplayer/">Get Flash.</a></div>	
+			<script type="text/javascript">
+
+				var fo = new SWFObject("viewer.swf", "viewer", "960px", "500px", "8", "#FFFFFF");
+
+				// SIMPLEVIEWER CONFIGURATION OPTIONS
+				// To use an option, uncomment it by removing the "//" at the start of the line
+				// For a description of config options, go to: 
+				// http://www.airtightinteractive.com/simpleviewer/options.html
+
+				fo.addVariable("xmlDataPath", "gallery.xml");
+				fo.addParam("wmode", "transparent");	
+				//fo.addVariable("langOpenImage", "Open Image in New Window");
+				//fo.addVariable("langAbout", "About");
+				//fo.addVariable("preloaderColor", "0xFFFFFF");
+
+				fo.write("flashcontent");	
+			</script>
+		</div>
+		<div class="secondary">
+		</div>
+	</div>
+</body>
+</html>
